@@ -111,7 +111,7 @@ if (form) {
 
     // Success message
     if (statusEl) {
-      statusEl.textContent = `Thank you, ${fullName}. Your message has been received successfully and we will be in touch soon.`;
+      statusEl.textContent = `Thank you, ${fullName}. Your demo signup was saved in this browser only. No email was sent.`;
       statusEl.style.color = "green";
       statusEl.style.opacity = "0";
 
@@ -249,4 +249,14 @@ if (lightbox) {
       closeLightbox();
     }
   });
+}
+
+// Additional navigation and theme accessibility fixes.
+if (toggleBtn && mobileMenu) {
+  toggleBtn.addEventListener('keydown', e => { if(e.key === 'Escape'){mobileMenu.hidden=true;toggleBtn.setAttribute('aria-expanded','false');toggleBtn.focus();} });
+}
+if(themeToggle){
+  const updatePressed=()=>themeToggle.setAttribute('aria-pressed',String(document.body.classList.contains('dark')));
+  themeToggle.addEventListener('click',updatePressed);
+  updatePressed();
 }
