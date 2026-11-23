@@ -4,14 +4,12 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<meta content="Contact UK Heritage Trails and sign up for tourism updates and heritage destination news." name="description"/>
-<title>UK Heritage Trails | Contact Us</title>
+<meta content="Explore coastal destinations across the UK including cliffs, beaches, seaside towns and scenic walks." name="description"/>
+<title>UK Heritage Trails | Coastal UK</title>
 <link href="css/styles.css" rel="stylesheet"/>
 </head>
 <body>
-<!-- Accessibility -->
 <a class="skip-link" href="#main">Skip to main content</a>
-<!-- Header -->
 <header class="site-header">
 <div class="container header-inner">
 <a class="brand" href="index.html"><span aria-hidden="true" class="brand-symbol">✦</span><span>UK Heritage <em>Trails</em></span></a>
@@ -19,97 +17,78 @@
 <ul class="nav-list">
 <li><a href="index.html">Home</a></li>
 <li><a href="about.html">About Us</a></li>
-<li><a href="gallery.html">Gallery</a></li>
+<li><a aria-current="page" class="active" href="gallery.html">Gallery</a></li>
 <li><a href="popular.html">Popular Places</a></li>
-<li><a class="active" href="contact.html">Contact Us</a></li>
+<li><a href="contact.html">Contact Us</a></li>
 </ul>
 </nav>
-<button aria-label="Toggle dark mode" aria-pressed="false" class="theme-toggle" id="themeToggle" type="button">◐ Theme</button><button aria-controls="mobileMenu" aria-expanded="false" class="nav-toggle" type="button">
-        Menu
-      </button>
+<button aria-label="Toggle dark mode" aria-pressed="false" class="theme-toggle" id="themeToggle" type="button">◐ Theme</button><button aria-controls="mobileMenu" aria-expanded="false" class="nav-toggle" type="button">Menu</button>
 </div>
-<div class="mobile-menu container" hidden="" id="mobileMenu"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="popular.html">Popular Places</a><a href="gallery.html">Gallery</a><a aria-current="page" class="active" href="contact.html">Contact Us</a></div>
+<div class="mobile-menu container" hidden="" id="mobileMenu"><a href="index.html">Home</a><a href="about.html">About Us</a><a href="popular.html">Popular Places</a><a href="gallery.html">Gallery</a><a href="contact.html">Contact Us</a></div>
 </header>
-<!-- Main -->
 <main class="container page" id="main">
+<nav aria-label="Breadcrumb" class="breadcrumb">
+<a href="index.html">Home</a> <span aria-hidden="true">/</span>
+<a href="gallery.html">Gallery</a> <span aria-hidden="true">/</span>
+<span>Coastal UK</span>
+</nav>
 <header class="page-head"><p class="eyebrow">UK HERITAGE TRAILS / EXPLORE</p>
-<h1>Contact Us</h1>
+<h1>Coastal UK: Places to Visit</h1>
 <p class="lead">
-        Get in touch with UK Heritage Trails and sign up to receive updates about cultural destinations, historic places and travel inspiration across the UK.
+        Discover dramatic cliffs, sandy beaches, seaside towns and coastal walking routes across the United Kingdom.
       </p>
 </header>
-<section class="split">
-<article class="card">
-<h2>Send Us a Message</h2>
-<p class="muted">
-          Fill in the form below to register your interest and receive updates on featured destinations and heritage experiences.
-        </p>
-<form class="form" id="regForm">
-<div class="field">
-<label for="fullName">Full Name</label>
-<input id="fullName" name="fullName" required="" type="text"/>
-</div>
-<div class="field">
-<label for="email">Email Address</label>
-<input id="email" name="email" required="" type="email"/>
-</div>
-<div class="field">
-<label for="region">Preferred Region</label>
-<select id="region" name="region" required="">
-<option value="">Select a region</option>
-<option value="London">London</option>
-<option value="Scotland">Scotland</option>
-<option value="Coastal UK">Coastal UK</option>
-<option value="National Parks">National Parks</option>
-<option value="Historic Cities">Historic Cities</option>
-</select>
-</div>
-<fieldset>
-<legend>Interests</legend>
-<label class="check">
-<input name="interests" type="checkbox" value="Landmarks"/>
-              Landmarks
-            </label>
-<label class="check">
-<input name="interests" type="checkbox" value="Museums"/>
-              Museums
-            </label>
-<label class="check">
-<input name="interests" type="checkbox" value="Nature"/>
-              Nature
-            </label>
-<label class="check">
-<input name="interests" type="checkbox" value="Historic Sites"/>
-              Historic Sites
-            </label>
-</fieldset>
-<div class="actions">
-<button class="btn primary" type="submit">
-              Send Message
-            </button>
-<button class="btn secondary" id="clearSignups" type="button">
-              Clear Stored Signups
-            </button>
-</div>
-<p aria-live="polite" class="form-status" id="formStatus"></p>
-</form>
-</article>
-<article class="card">
-<h2>Recent Signups</h2>
-<p class="muted">
-          This section shows the most recent registrations stored in the browser for demonstration purposes.
-        </p>
-<ul class="signup-list" id="signupList">
-<li>No signups yet.</li>
-</ul>
-</article>
+<section aria-label="Coastal UK destinations" class="gallery-grid">
+<figure class="card">
+<img alt="Dramatic coastal cliffs overlooking the sea in the UK" loading="lazy" src="images/coastal-cliffs.jpg"/>
+<figcaption>
+<strong>Coastal Cliffs</strong><br/>
+<span class="muted">Breathtaking cliff-top views and walking routes.</span>
+</figcaption>
+</figure>
+<figure class="card">
+<img alt="A UK seaside town with waterfront buildings and harbour views" loading="lazy" src="images/seaside-town.jpg"/>
+<figcaption>
+<strong>Seaside Towns</strong><br/>
+<span class="muted">Relaxed coastal towns with harbours, cafés and beaches.</span>
+</figcaption>
+</figure>
+<figure class="card">
+<img alt="Sandy beach with calm sea and coastal horizon" loading="lazy" src="images/sandy-beach.jpg"/>
+<figcaption>
+<strong>Beaches</strong><br/>
+<span class="muted">Perfect for scenic walks, sunsets and family trips.</span>
+</figcaption>
+</figure>
+<figure class="card">
+<img alt="A coastal walking path beside the sea with green hills" loading="lazy" src="images/coastal-path.jpg"/>
+<figcaption>
+<strong>Coastal Paths</strong><br/>
+<span class="muted">Explore famous routes like the South West Coast Path.</span>
+</figcaption>
+</figure>
+<figure class="card">
+<img alt="A lighthouse on the UK coastline by the sea" loading="lazy" src="images/lighthouse.jpg"/>
+<figcaption>
+<strong>Lighthouses</strong><br/>
+<span class="muted">Iconic coastal landmarks and photo spots.</span>
+</figcaption>
+</figure>
+<figure class="card">
+<img alt="Historic coastal ruins or heritage site near the sea" loading="lazy" src="images/coastal-heritage.jpg"/>
+<figcaption>
+<strong>Coastal Heritage</strong><br/>
+<span class="muted">Discover heritage sites with ocean views and history.</span>
+</figcaption>
+</figure>
 </section>
+<div style="margin-top: 16px;">
+<a class="btn secondary" href="gallery.html">← Back to Gallery</a>
+</div>
 </main>
-<!-- Footer -->
 <footer class="site-footer">
 <div class="container footer-inner">
 <p>© <span id="year"></span> UK Heritage Trails</p>
-<p class="muted">Designed for educational purposes | Web Development Assignment</p>
 </div>
 </footer>
 <script src="js/apps.js"></script>
